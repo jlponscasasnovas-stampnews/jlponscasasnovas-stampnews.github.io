@@ -147,6 +147,11 @@
     .features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 34px; list-style: none; padding: 0; margin: 0; }
     .features li { border-left: 4px solid var(--red); padding: 4px 0 4px 16px; }
     .features strong { display: block; font-family: var(--serif); font-size: 20px; margin-bottom: 2px; }
+    .img-link { display: block; border-radius: 2px; transition: transform .15s ease; }
+    .img-link:hover { transform: translateY(-2px); }
+    .img-link:focus-visible { outline: 3px solid var(--red); outline-offset: 4px; }
+    .hero-band .img-link:focus-visible { outline-color: #fff; }
+    .limits { margin: 22px 0 0; font-size: 14px; color: var(--muted); border-left: 3px solid var(--rule); padding-left: 12px; }
     .soon { margin-top: 26px; background: var(--paper); border: 1px solid var(--rule); padding: 16px 18px; border-radius: 4px; }
     .soon h3 { margin: 0 0 6px; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
     .soon ul { margin: 0; padding-left: 20px; }
@@ -209,8 +214,10 @@
         <span class="cta-note">Disponible en Chrome Web Store.</span>
       </div>
       <figure class="hero-figure">
-        <img src="assets/republica-amarillo.jpg" width="1000" height="1250"
-             alt="Sello de STAMP NEWS: estatua de la República con un chaleco amarillo y el titular «La República de amarillo. Un símbolo para pensar la protesta social».">
+        <a class="img-link" href="https://elpais.com/internacional/2026-10-17/la-rabia-de-los-estudiantes-los-agricultores-y-los-funcionarios-confluye-en-una-gran-protesta-en-toda-francia.html" target="_blank" rel="noopener" aria-label="Abrir la noticia de origen en El País (se abre en una pestaña nueva)">
+          <img src="assets/republica-amarillo.jpg" width="1000" height="1250"
+               alt="Sello de STAMP NEWS: estatua de la República con un chaleco amarillo y el titular «La República de amarillo. Un símbolo para pensar la protesta social».">
+        </a>
         <figcaption>Ilustración de STAMP NEWS creada con IA</figcaption>
       </figure>
     </div>
@@ -227,8 +234,10 @@
           <div class="stamp-inner">
             <p class="source">Francia · Sociedad</p>
             <figure class="stamp-thumb">
-              <img src="assets/republica-amarillo.jpg" width="1000" height="1250" loading="lazy"
-                   alt="Ilustración: estatua de la República con chaleco amarillo.">
+              <a class="img-link" href="https://elpais.com/internacional/2026-10-17/la-rabia-de-los-estudiantes-los-agricultores-y-los-funcionarios-confluye-en-una-gran-protesta-en-toda-francia.html" target="_blank" rel="noopener" aria-label="Abrir la noticia de origen en El País (se abre en una pestaña nueva)">
+                <img src="assets/republica-amarillo.jpg" width="1000" height="1250" loading="lazy"
+                     alt="Ilustración: estatua de la República con chaleco amarillo.">
+              </a>
               <figcaption>Ilustración de STAMP NEWS creada con IA</figcaption>
             </figure>
             <h3><a href="https://elpais.com/internacional/2026-10-17/la-rabia-de-los-estudiantes-los-agricultores-y-los-funcionarios-confluye-en-una-gran-protesta-en-toda-francia.html" target="_blank" rel="noopener">La República de amarillo</a></h3>
@@ -268,6 +277,7 @@
         <li><strong>Tu archivo, en tu navegador</strong>Busca y filtra tus sellos en «My stamps». Se guardan en tu propio dispositivo.</li>
       </ul>
       <p style="margin:26px 0 0"><a class="cta" href="https://chromewebstore.google.com/detail/stamp-news/kjmjkenahmhaeeikhajmlklepaojkhee" target="_blank" rel="noopener">Empieza a sellar tus noticias hoy →</a></p>
+      <p class="limits">El análisis utiliza el texto accesible de la página; puede ser parcial. No transcribe automáticamente vídeos ni podcasts.</p>
       <div class="soon">
         <h3>En desarrollo</h3>
         <ul>
